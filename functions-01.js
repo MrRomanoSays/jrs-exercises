@@ -8,7 +8,7 @@ const reverseNumber = function (number) {
     let reversedNumberAsString = reversedNumberAsArray.join("")
     let convertStringToNumber = +reversedNumberAsString
 
-    return reversedNumberAsString
+    return convertStringToNumber
     
 }
 
