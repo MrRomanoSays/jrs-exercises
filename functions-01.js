@@ -6,7 +6,8 @@ const reverseNumber = function (number) {
     let numberAsArray = numberAsString.split("")
     let reversedNumberAsArray = numberAsArray.reverse()
     let reversedNumberAsString = reversedNumberAsArray.join("")
-    
+    let convertStringToNumber = +reversedNumberAsString
+
     return reversedNumberAsString
     
 }
