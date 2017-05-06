@@ -12,3 +12,5 @@ const reverseNumber = function (number) {
 }
 
 reverseNumber(123)
+
+//delete this line.
