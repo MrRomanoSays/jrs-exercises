@@ -18,14 +18,17 @@ const primeNumberChecker = function (initialNumber) {
     }
   }
   
-  if (initialNumber < 0) {
-   console.log("Negative numbers are not allowed")
+  if (typeof initialNumber !== "number") {
+    console.log('Error: This function requires an input with type "number".  Your input was not a number')
+    return
+  } else if (initialNumber < 0) {
+   console.log("Error: Negative numbers are not allowed")
    return 
   } else if (initialNumber === 0) {
     console.log("Zero is not a prime number")
     return           
   } else if (initialNumber % 1 != 0) {
-    console.log("Only whole numbers are accepted in this function")
+    console.log("Error: Only whole numbers are accepted in this function")
     return
   } else {
     return divideBy(initialNumber, initialNumber-1)
