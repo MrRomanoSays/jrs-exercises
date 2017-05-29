@@ -31,3 +31,19 @@ var punctuation = string.includes(".") || string.includes("!") || string.include
 
 //  Remaining issue to fix at a later date:
 //findTheLongestString("Testing@Punctuation")
+
+
+/* 
+Similiar Activity from Free Code Camp (FCC)
+
+Directions:
+Return the length of the longest word in the provided sentence.
+Your response should be a number.
+*/
+
+function findLongestWord(str) {
+  stringAsArray = str.split(" ").sort(function (a, b) {return a.length-b.length});
+  return stringAsArray[stringAsArray.length-1].length;
+}
+
+findLongestWord("The quick brown fox jumped over the lazy dog");
